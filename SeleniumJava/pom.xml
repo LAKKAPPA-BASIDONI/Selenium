@@ -9,17 +9,39 @@
 
   <name>SeleniumJava</name>
   <url>http://maven.apache.org</url>
+  
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
   <dependencies>
-    <dependency>
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.15.0</version>
+    <version>4.16.0</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+
+
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.16.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
+
 
 	<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
@@ -51,4 +73,46 @@
 
 
   </dependencies>
+  <profiles>
+	  <profile>
+		  <id> allTestCases</id>
+		  <build>
+	  <pluginManagement>
+		  <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+      </pluginManagement>
+      </build>
+	  </profile>
+  </profiles>
+  <build>
+	  <pluginManagement>
+		  <plugins>
+    
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.2</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+   
+</plugins>
+		  
+	  </pluginManagement>
+  </build>
+  
 </project>
