@@ -26,14 +26,22 @@ public class LoginPageLocators extends CommonFunction {
 	@FindBy(name= "inputPassword")
 	WebElement usrPassword;
 	
+	@FindBy(id="visitUsTwo")
+	WebElement visitus;
+	
 	@FindBy(className= "signInBtn")
 	WebElement loginBtn;
+	
+	@FindBy(xpath = "//div/h1")
+	WebElement h1Txt;
 	
 	
 	
 	
 	public void loginApplication(String name, String pwd) {
 		waitForTimeout(By.id("inputUsername"));
+		String ss = h1Txt.getText();
+		System.out.println("Title  ::"+ss);
 		usrName.sendKeys(name);
 		usrPassword.sendKeys(pwd);
 		loginBtn.click();

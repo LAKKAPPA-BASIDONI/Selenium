@@ -50,9 +50,6 @@ public class Test1  {
 		
 		obj.goTo();
 		obj.loginApplication("rahul", "rahulshettyacademy");
-		
-		
-		
 		Assert.assertTrue(true);
 		
 	}

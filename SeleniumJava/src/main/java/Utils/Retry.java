@@ -19,10 +19,3 @@ public class Retry  implements IRetryAnalyzer{
 	}
 
 }
-
-//<dependency>
-//<groupId>org.testng</groupId>
-//<artifactId>testng</artifactId>
-//<version>7.8.0</version>
-//<scope>test</scope>
-//</dependency>
