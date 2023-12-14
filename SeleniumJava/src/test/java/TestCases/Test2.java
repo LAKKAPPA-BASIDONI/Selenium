@@ -14,12 +14,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
+import Utils.BrowserSettings;
+
 public class Test2  {
+	WebDriver driver;
 	@Test
 	public void  test1() {
 		System.out.println("test1");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
+		driver.close();
 	}
 	@Test
 	public void  test12() {
@@ -28,8 +32,15 @@ public class Test2  {
 		driver.get("https://www.google.com");
 		Assertion asr = new Assertion();
 		asr.assertTrue(true);
+		driver.close();
 	}
 	
+	@Test 
+	public void test3() throws IOException {
+		BrowserSettings obj = new BrowserSettings();
+		driver = obj.initializeDriver();
+		driver.get("https://www.google.com");
+	}
 	
 //	public static void main(String args[]) throws IOException {
 //		FileInputStream file = new FileInputStream("D://Book1.xlsx");

@@ -17,7 +17,7 @@ public class ActionsDemo {
 								.build().perform();
 			
 			
-			a.moveToElement(driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]"))).click();
+			a.moveToElement(driver.findElement(By.xpath("//input[@id=\"twotabsearchtextbox\"]")));
 								//.keyDown().sendKeys("Mobile").build().perform();
 			
 			a.moveToElement(driver.findElement(By.xpath("//span[@id=\"nav-link-accountList-nav-line-1\"]")))

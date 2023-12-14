@@ -10,18 +10,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Utils.BrowserSettings;
-import Utils.LoginPageLocators;
 import Utils.ProductVerify;
 
 
 public class ProductVerifyTest extends BrowserSettings {
 	
 	@Test
-	public void loginPage() throws IOException {
-		
+	public void loginPage() throws IOException, InterruptedException {
+		System.out.println("lakkkappa");
 		ProductVerify prv = launchApplication();
+		prv.goTo();
+		prv.loginMainAccount("anshika@gmail.com", "Iamking@000");
 		prv.grabProductsInnerText();
+		prv.cartFirstOne("zara coat 3");
 		Assert.assertTrue(true);
+		prv.close();
 		
 	}
 

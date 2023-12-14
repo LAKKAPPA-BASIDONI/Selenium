@@ -65,7 +65,7 @@ public class Test3  {
 //		for(LogEntry log : logs) {
 //			System.out.println("message :"+log.getMessage());
 //		}
-		
+
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");

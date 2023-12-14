@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/3/5</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 08 17:20:41 IST 2023</td>
+<td>Started on:</td><td>Wed Dec 13 17:28:02 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>28 seconds (28008 ms)</td>
+<tr><td>Total time:</td><td>58 seconds (58898 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,88 +76,21 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.Test1.log()'><b>log</b><br>Test class: TestCases.Test1</td>
-<td><div><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [log] with [class java.util.HashMap].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+<td title='TestCases.ProductVerifyTest.loginPage()'><b>loginPage</b><br>Test class: TestCases.ProductVerifyTest</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method findElement(SearchContext) in the type By is not applicable for the arguments (By)
+
+	at Utils.ProductVerify.cartFirstOne(ProductVerify.java:97)
+	at TestCases.ProductVerifyTest.loginPage(ProductVerifyTest.java:25)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace28161612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace28161612'><pre>org.testng.TestNGException: 
-Cannot inject @Test annotated Method [log] with [class java.util.HashMap].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:911)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>0</td>
-<td>TestCases.Test1@2767e23c</td></tr>
-<tr>
-<td title='TestCases.Test1.demo()'><b>demo</b><br>Test class: TestCases.Test1</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1796798100", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1796798100'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at org.testng.asserts.Assertion$2.doAssert(Assertion.java:96)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertTrue(Assertion.java:92)
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>4</td>
-<td>TestCases.Test1@2767e23c</td></tr>
-<tr>
-<td title='TestCases.Test2.test12()'><b>test12</b><br>Test class: TestCases.Test2</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at TestCases.Test2.test12(Test2.java:30)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1234094352", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1234094352'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at org.testng.asserts.Assertion$2.doAssert(Assertion.java:96)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertTrue(Assertion.java:92)
-	at TestCases.Test2.test12(Test2.java:30)
+... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1683302092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1683302092'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method findElement(SearchContext) in the type By is not applicable for the arguments (By)
+
+	at Utils.ProductVerify.cartFirstOne(ProductVerify.java:97)
+	at TestCases.ProductVerifyTest.loginPage(ProductVerifyTest.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -174,8 +107,8 @@ For more information on native dependency injection please refer to https://test
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
 </pre></div></td>
-<td>3</td>
-<td>TestCases.Test2@5b247367</td></tr>
+<td>47</td>
+<td>TestCases.ProductVerifyTest@359df09a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -188,202 +121,55 @@ For more information on native dependency injection please refer to https://test
 <tr>
 <td title='TestCases.Test2.test1()'><b>test1</b><br>Test class: TestCases.Test2</td>
 <td></td>
-<td>5</td>
-<td>TestCases.Test2@5b247367</td></tr>
+<td>45</td>
+<td>TestCases.Test2@2b30a42c</td></tr>
 <tr>
-<td title='TestCases.Test1.loginPage()'><b>loginPage</b><br>Test class: TestCases.Test1</td>
+<td title='TestCases.Test1.log()'><b>log</b><br>Test class: TestCases.Test1<br>Parameters: {userName=anshika@gmail.com, password=Iamking@000}<br/>
+<a href="#Output-1228233440" onClick='toggleBox("Output-1228233440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1228233440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1228233440">
+Start execution<br/>
+Open the browser<br/>
+Enter Email<br/>
+Enter password<br/>
+click login button<br/>
+</div>
+</td>
 <td></td>
-<td>2</td>
-<td>TestCases.Test1@2767e23c</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>8</td>
+<td>TestCases.Test1@6be968ce</td></tr>
 <tr>
-<td title='TestCases.Test1.demo()'><b>demo</b><br>Test class: TestCases.Test1</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace68376336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace68376336'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at org.testng.asserts.Assertion$2.doAssert(Assertion.java:96)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertTrue(Assertion.java:92)
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>3</td>
-<td>TestCases.Test1@2767e23c</td></tr>
-<tr>
-<td title='TestCases.Test1.demo()'><b>demo</b><br>Test class: TestCases.Test1</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089143459", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2089143459'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at org.testng.asserts.Assertion$2.doAssert(Assertion.java:96)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertTrue(Assertion.java:92)
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
+<td title='TestCases.Test2.test3()'><b>test3</b><br>Test class: TestCases.Test2</td>
+<td></td>
 <td>5</td>
-<td>TestCases.Test1@2767e23c</td></tr>
+<td>TestCases.Test2@2b30a42c</td></tr>
 <tr>
-<td title='TestCases.Test1.demo()'><b>demo</b><br>Test class: TestCases.Test1</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1055555235", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1055555235'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at org.testng.asserts.Assertion$2.doAssert(Assertion.java:96)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertTrue(Assertion.java:92)
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>4</td>
-<td>TestCases.Test1@2767e23c</td></tr>
+<td title='TestCases.Test2.test12()'><b>test12</b><br>Test class: TestCases.Test2</td>
+<td></td>
+<td>7</td>
+<td>TestCases.Test2@2b30a42c</td></tr>
 <tr>
-<td title='TestCases.Test1.demo()'><b>demo</b><br>Test class: TestCases.Test1</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace277475669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace277475669'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at org.testng.asserts.Assertion$2.doAssert(Assertion.java:96)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertTrue(Assertion.java:92)
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>3</td>
-<td>TestCases.Test1@2767e23c</td></tr>
+<td title='TestCases.Test3.logGenerate()'><b>logGenerate</b><br>Test class: TestCases.Test3</td>
+<td></td>
+<td>45</td>
+<td>TestCases.Test3@609e8838</td></tr>
 <tr>
-<td title='TestCases.Test1.demo()'><b>demo</b><br>Test class: TestCases.Test1</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace466491619", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace466491619'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at org.testng.asserts.Assertion$2.doAssert(Assertion.java:96)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:25)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:12)
-	at org.testng.asserts.Assertion.assertTrue(Assertion.java:92)
-	at TestCases.Test1.demo(Test1.java:101)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:248)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-</pre></div></td>
-<td>3</td>
-<td>TestCases.Test1@2767e23c</td></tr>
+<td title='TestCases.Test1.log()'><b>log</b><br>Test class: TestCases.Test1<br>Parameters: {userName=anshika@gmail.com, password=Iamking@000}<br/>
+<a href="#Output-1167689783" onClick='toggleBox("Output-1167689783", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1167689783" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1167689783">
+Start execution<br/>
+Open the browser<br/>
+Enter Email<br/>
+Enter password<br/>
+click login button<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>TestCases.Test1@6be968ce</td></tr>
 </table><p>
 </body>
 </html>

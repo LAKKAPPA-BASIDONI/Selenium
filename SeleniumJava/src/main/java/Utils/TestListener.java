@@ -1,12 +1,8 @@
 package Utils;
 
-import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -15,15 +11,21 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+
+
 public class TestListener  implements ITestListener{
 	ExtentTest test;
+	LogFiles obj;
 	ExtentReports extent = Extent_Report.extentRP();
 	ThreadLocal<ExtentTest> testThread = new ThreadLocal<>();
 	@Override
 	public  void onTestStart(ITestResult result) {
 	    // not implemented
+		LogFiles obj = new LogFiles();
+		obj.logGenerate(result.getMethod().getMethodName());
 		test = extent.createTest(result.getMethod().getMethodName());
 		testThread.set(test);
+		
 	  }
 
 	@Override

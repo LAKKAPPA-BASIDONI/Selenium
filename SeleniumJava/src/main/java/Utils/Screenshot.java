@@ -10,13 +10,14 @@ import org.openqa.selenium.WebDriver;
 
 public class Screenshot {
 	
-	public void takeScreenshot(WebDriver driver) throws IOException{
+	public void takeScreenshot(WebDriver driver,String srname) throws IOException{
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		
-		File file = new File("C://Users//Lakkappa Y//eclipse-workspace//Selenium//SeleniumJava//test-output//ScreenshotFolder"+".png");
+		File file = new File("C://Users//Lakkappa Y//eclipse-workspace//Selenium//SeleniumJava//test-output//ScreenshotFolder//'"+srname+"'.png");
 		FileUtils.copyFile(src, file);
 		System.out.println("Inside csreenshot method");
 	}
+	
 
 }

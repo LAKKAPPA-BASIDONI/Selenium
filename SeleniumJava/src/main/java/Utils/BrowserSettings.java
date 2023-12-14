@@ -1,14 +1,18 @@
 package Utils;
 
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class BrowserSettings {
 	
@@ -16,35 +20,50 @@ public class BrowserSettings {
 	WebDriver driver; 
 	public WebDriver initializeDriver() throws IOException {
 		
-		driver = new ChromeDriver();
+		//driver = new ChromeDriver();
+		
 		Properties pr = new Properties();
-		FileInputStream fl = new FileInputStream("C:\\Users\\Lakkappa Y\\eclipse-workspace\\SeleniumJava\\src\\main\\java\\Utils\\Globaldata.properties");
+		FileReader fl = new FileReader("C:\\Users\\Lakkappa Y\\eclipse-workspace\\Selenium\\SeleniumJava\\src\\main\\java\\Utils\\Globaldata.properties");
 		pr.load(fl);
-		String browserName =  pr.getProperty("browser");
-		System.out.println(browserName);
+
+		String browserName = (System.getProperty("browser")!=null)? System.getProperty("browser"): pr.getProperty("browser");
+		System.out.println("browser Name"+browserName.getClass()+browserName.getClass().getSimpleName());
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
-			driver = new ChromeDriver();
+			System.setProperty("webdriver.chrome.driver","D:\\WebDrivers\\chromedriver.exe");
+			
+			this.driver = new ChromeDriver();
+			
+			
 			System.out.println("browser initialised...");
 			
-		}else if(browserName.equalsIgnoreCase("firefox")) {
-			driver = new FirefoxDriver();
+		}else if(browserName.equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "D:\\WebDrivers\\geckodriver.exe");
+			this.driver = new FirefoxDriver();
 			
 		}else if(browserName.equalsIgnoreCase("edge")) {
-			driver = new EdgeDriver();
+			System.setProperty("webdriver.edge.driver", "D:\\WebDrivers\\msedgedriver.exe");
+			this.driver = new EdgeDriver();
 		}
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.manage().window().maximize();
-		return driver;
+		this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		this.driver.manage().window().maximize();
+		return this.driver;
 		
 	}
 	
 	public ProductVerify launchApplication() throws IOException{
-		driver = initializeDriver();
-		ProductVerify obj = new ProductVerify(driver);
-		obj.goTo();
+		this.driver = initializeDriver();
+		ProductVerify obj = new ProductVerify(this.driver);
 		return obj;
 	}
-
+	
+	public void run1() throws IOException {
+		this.driver = initializeDriver();
+		this.driver.get("https://www.google.com");
+		
+	}
+	
+	
 }
+

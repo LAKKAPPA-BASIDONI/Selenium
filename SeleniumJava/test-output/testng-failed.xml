@@ -3,11 +3,32 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.Test2">
+      <class name="TestCases.ProductVerifyTest">
         <methods>
-          <include name="test12"/>
+          <include name="loginPage"/>
         </methods>
-      </class> <!-- TestCases.Test2 -->
+      </class> <!-- TestCases.ProductVerifyTest -->
+      <class name="TestCases.productCart">
+        <methods>
+          <include name="productcart"/>
+        </methods>
+      </class> <!-- TestCases.productCart -->
+      <class name="TestCases.Test3">
+        <methods>
+          <include name="logGenerate"/>
+        </methods>
+      </class> <!-- TestCases.Test3 -->
+      <class name="TestCases.Test1">
+        <methods>
+          <include name="extentRP"/>
+          <include name="log" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- TestCases.Test1 -->
+      <class name="Utils.LogFiles">
+        <methods>
+          <include name="run12"/>
+        </methods>
+      </class> <!-- Utils.LogFiles -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

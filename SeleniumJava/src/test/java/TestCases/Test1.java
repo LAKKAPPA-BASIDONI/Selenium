@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -40,7 +41,7 @@ public class Test1  {
 		
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void loginPage() throws IOException {
 		
 		WebDriver driver = new ChromeDriver();
@@ -51,20 +52,28 @@ public class Test1  {
 		obj.goTo();
 		obj.loginApplication("rahul", "rahulshettyacademy");
 		Assert.assertTrue(true);
+		driver.close();
 		
 	}
 	@Test(dataProvider = "getData")
 	public void log(HashMap<String,String> hash) throws IOException{
 		
-		
+
+		Reporter.log("Start execution");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/client/");
+		Reporter.log("Open the browser",true);
 		driver.findElement(By.xpath("//input[@id='userEmail']")).sendKeys(hash.get("userName"));
+		Reporter.log("Enter Email",true);
 		driver.findElement(By.xpath("//input[@id='userPassword']")).sendKeys(hash.get("password"));
+		Reporter.log("Enter password");
 		driver.findElement(By.xpath("//input[@id='login']")).click();
+		Reporter.log("click login button");
+		System.out.println("hello");
 		
-		Screenshot scr = new Screenshot();
-		scr.takeScreenshot(driver);
+//		Screenshot scr = new Screenshot();
+//		scr.takeScreenshot(driver, "loginpage");
+		driver.close();
 	
 	}
 	@Test
@@ -89,7 +98,7 @@ public class Test1  {
 		
 	}
 	
-	@Test//(retryAnalyzer = Retry.class)
+	@Test(enabled = false)//(retryAnalyzer = Retry.class)
 	public void demo() {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\WebDrivers\\chromedriver.exe");
@@ -97,6 +106,7 @@ public class Test1  {
 		driver.get("https://google.com");
 		Assertion act = new Assertion();
 		//act.assertTrue(false);
+		driver.close();
 		
 		
 	}
