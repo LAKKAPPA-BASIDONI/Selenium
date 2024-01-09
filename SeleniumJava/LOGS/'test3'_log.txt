@@ -1,6 +1,6 @@
-[1702468739.151][INFO]: Starting ChromeDriver 120.0.6099.62 (93ab19d804d479b507c4694305631dfb65f8e930-refs/branch-heads/6099_56@{#3}) on port 14123
-[1702468739.151][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1702468739.191][INFO]: [1f745cc4aea88d44a13adaadede0ebb8] COMMAND InitSession {
+[1703345415.056][INFO]: Starting ChromeDriver 120.0.6099.62 (93ab19d804d479b507c4694305631dfb65f8e930-refs/branch-heads/6099_56@{#3}) on port 13638
+[1703345415.056][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1703345415.111][INFO]: [1f94592d57505cb46e43b2f10d480483] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -11,13 +11,13 @@
       } ]
    }
 }
-[1702468739.191][INFO]: Browser search. Trying... D:\WebDrivers\chrome.exe
-[1702468739.191][INFO]: Browser search. Trying... D:\WebDrivers\chrome.exe
-[1702468739.191][INFO]: Browser search. Trying... D:\WebDrivers\chromium.exe
-[1702468739.195][INFO]: Browser search. Trying... C:\WINDOWS\system32\config\systemprofile\AppData\Local\Google\Chrome\Application\chrome.exe
-[1702468739.195][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
-[1702468739.195][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
-[1702468739.196][INFO]: Populating Preferences file: {
+[1703345415.111][INFO]: Browser search. Trying... D:\WebDrivers\chrome.exe
+[1703345415.111][INFO]: Browser search. Trying... D:\WebDrivers\chrome.exe
+[1703345415.111][INFO]: Browser search. Trying... D:\WebDrivers\chromium.exe
+[1703345415.115][INFO]: Browser search. Trying... C:\WINDOWS\system32\config\systemprofile\AppData\Local\Google\Chrome\Application\chrome.exe
+[1703345415.115][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1703345415.115][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1703345415.116][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -70,7 +70,7 @@
       "enabled": false
    }
 }
-[1702468739.197][INFO]: Populating Local State file: {
+[1703345415.116][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -80,23 +80,23 @@
       }
    }
 }
-[1702468739.198][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
-[1702468739.198][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
-[1702468739.199][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
-[1702468739.199][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir120_1429879108" data:,
-[1702468739.890][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1702468740.005][INFO]: [1f745cc4aea88d44a13adaadede0ebb8] RESPONSE InitSession {
+[1703345415.117][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1703345415.117][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1703345415.118][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
+[1703345415.118][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir36860_724719333" data:,
+[1703345415.717][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1703345416.158][INFO]: [1f94592d57505cb46e43b2f10d480483] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
-      "browserVersion": "120.0.6099.71",
+      "browserVersion": "120.0.6099.130",
       "chrome": {
          "chromedriverVersion": "120.0.6099.62 (93ab19d804d479b507c4694305631dfb65f8e930-refs/branch-heads/6099_56@{#3})",
-         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir120_1429879108"
+         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir36860_724719333"
       },
       "fedcm:accounts": true,
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:56570"
+         "debuggerAddress": "localhost:60089"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -117,29 +117,29 @@
       "webauthn:extension:prf": true,
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "1f745cc4aea88d44a13adaadede0ebb8"
+   "sessionId": "1f94592d57505cb46e43b2f10d480483"
 }
-[1702468740.024][INFO]: [1f745cc4aea88d44a13adaadede0ebb8] COMMAND SetTimeouts {
+[1703345416.181][INFO]: [1f94592d57505cb46e43b2f10d480483] COMMAND SetTimeouts {
    "implicit": 5000
 }
-[1702468740.024][INFO]: [1f745cc4aea88d44a13adaadede0ebb8] RESPONSE SetTimeouts
-[1702468740.027][INFO]: [1f745cc4aea88d44a13adaadede0ebb8] COMMAND MaximizeWindow {
+[1703345416.181][INFO]: [1f94592d57505cb46e43b2f10d480483] RESPONSE SetTimeouts
+[1703345416.185][INFO]: [1f94592d57505cb46e43b2f10d480483] COMMAND MaximizeWindow {
 }
-[1702468740.027][INFO]: Waiting for pending navigations...
-[1702468740.030][INFO]: Done waiting for pending navigations. Status: ok
-[1702468740.141][INFO]: Waiting for pending navigations...
-[1702468740.143][INFO]: Done waiting for pending navigations. Status: ok
-[1702468740.144][INFO]: [1f745cc4aea88d44a13adaadede0ebb8] RESPONSE MaximizeWindow {
+[1703345416.185][INFO]: Waiting for pending navigations...
+[1703345416.187][INFO]: Done waiting for pending navigations. Status: ok
+[1703345416.307][INFO]: Waiting for pending navigations...
+[1703345416.308][INFO]: Done waiting for pending navigations. Status: ok
+[1703345416.308][INFO]: [1f94592d57505cb46e43b2f10d480483] RESPONSE MaximizeWindow {
    "height": 784,
    "width": 1040,
    "x": -8,
    "y": -8
 }
-[1702468740.150][INFO]: [1f745cc4aea88d44a13adaadede0ebb8] COMMAND Navigate {
+[1703345416.312][INFO]: [1f94592d57505cb46e43b2f10d480483] COMMAND Navigate {
    "url": "https://www.google.com"
 }
-[1702468740.150][INFO]: Waiting for pending navigations...
-[1702468740.152][INFO]: Done waiting for pending navigations. Status: ok
-[1702468740.488][INFO]: Waiting for pending navigations...
-[1702468741.727][INFO]: Done waiting for pending navigations. Status: ok
-[1702468741.727][INFO]: [1f745cc4aea88d44a13adaadede0ebb8] RESPONSE Navigate
+[1703345416.312][INFO]: Waiting for pending navigations...
+[1703345416.315][INFO]: Done waiting for pending navigations. Status: ok
+[1703345416.736][INFO]: Waiting for pending navigations...
+[1703345417.909][INFO]: Done waiting for pending navigations. Status: ok
+[1703345417.909][INFO]: [1f94592d57505cb46e43b2f10d480483] RESPONSE Navigate

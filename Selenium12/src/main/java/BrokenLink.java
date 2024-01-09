@@ -10,14 +10,17 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
 
 public class BrokenLink {
 
 	public static void main(String[] args) throws InterruptedException, MalformedURLException, IOException {
 		
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions option = new ChromeOptions();
+		option.addArguments("--headless");
+		
+		WebDriver driver = new ChromeDriver(option);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		String url = driver.findElement(By.xpath("//li/a[text()=\"REST API\"]")).getAttribute("href");
@@ -28,6 +31,8 @@ public class BrokenLink {
 		int status = con.getResponseCode();
 		
 		System.out.println(status);
+		System.out.println("Broken links");
+		driver.close();
 				
 		
 		

@@ -22,6 +22,7 @@ public class FluentWaitExample {
 			
 			WebElement foo = wait.until(new Function<WebDriver, WebElement>(){
 				public WebElement apply(WebDriver driver) {
+					System.out.println("hi.......");
 					if(driver.findElement(By.cssSelector("[id='finish'] h4")).isDisplayed()) {
 						return driver.findElement(By.cssSelector("[id='finish'] h4"));
 					}else {
@@ -29,7 +30,7 @@ public class FluentWaitExample {
 					}
 				}
 			});
-			System.out.println(foo.isDisplayed());
+//			System.out.println(foo.isDisplayed());
 
 		}
 

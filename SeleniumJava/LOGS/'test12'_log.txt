@@ -1,6 +1,6 @@
-[1702468728.961][INFO]: Starting ChromeDriver 120.0.6099.62 (93ab19d804d479b507c4694305631dfb65f8e930-refs/branch-heads/6099_56@{#3}) on port 24772
-[1702468728.961][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1702468728.976][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND InitSession {
+[1703345409.516][INFO]: Starting ChromeDriver 120.0.6099.62 (93ab19d804d479b507c4694305631dfb65f8e930-refs/branch-heads/6099_56@{#3}) on port 37819
+[1703345409.516][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1703345409.546][INFO]: [788e426175b09c7c65145e54368e1401] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -11,13 +11,13 @@
       } ]
    }
 }
-[1702468728.976][INFO]: Browser search. Trying... D:\WebDrivers\chrome.exe
-[1702468728.977][INFO]: Browser search. Trying... D:\WebDrivers\chrome.exe
-[1702468728.977][INFO]: Browser search. Trying... D:\WebDrivers\chromium.exe
-[1702468728.980][INFO]: Browser search. Trying... C:\WINDOWS\system32\config\systemprofile\AppData\Local\Google\Chrome\Application\chrome.exe
-[1702468728.980][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
-[1702468728.980][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
-[1702468728.981][INFO]: Populating Preferences file: {
+[1703345409.546][INFO]: Browser search. Trying... D:\WebDrivers\chrome.exe
+[1703345409.546][INFO]: Browser search. Trying... D:\WebDrivers\chrome.exe
+[1703345409.546][INFO]: Browser search. Trying... D:\WebDrivers\chromium.exe
+[1703345409.550][INFO]: Browser search. Trying... C:\WINDOWS\system32\config\systemprofile\AppData\Local\Google\Chrome\Application\chrome.exe
+[1703345409.550][INFO]: Browser search. Trying... C:\Program Files\Google\Chrome\Application\chrome.exe
+[1703345409.550][INFO]: Browser search. Found at  C:\Program Files\Google\Chrome\Application\chrome.exe
+[1703345409.551][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -70,7 +70,7 @@
       "enabled": false
    }
 }
-[1702468728.981][INFO]: Populating Local State file: {
+[1703345409.551][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -80,23 +80,23 @@
       }
    }
 }
-[1702468728.982][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
-[1702468728.982][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
-[1702468728.983][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
-[1702468728.983][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir900_333330220" data:,
-[1702468730.218][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1702468730.594][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE InitSession {
+[1703345409.552][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1703345409.552][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1703345409.553][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
+[1703345409.553][INFO]: Launching chrome: "C:\Program Files\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\WINDOWS\SystemTemp\scoped_dir21216_486545613" data:,
+[1703345410.236][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1703345410.766][INFO]: [788e426175b09c7c65145e54368e1401] RESPONSE InitSession {
    "capabilities": {
       "acceptInsecureCerts": false,
       "browserName": "chrome",
-      "browserVersion": "120.0.6099.71",
+      "browserVersion": "120.0.6099.130",
       "chrome": {
          "chromedriverVersion": "120.0.6099.62 (93ab19d804d479b507c4694305631dfb65f8e930-refs/branch-heads/6099_56@{#3})",
-         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir900_333330220"
+         "userDataDir": "C:\\WINDOWS\\SystemTemp\\scoped_dir21216_486545613"
       },
       "fedcm:accounts": true,
       "goog:chromeOptions": {
-         "debuggerAddress": "localhost:56468"
+         "debuggerAddress": "localhost:60033"
       },
       "networkConnectionEnabled": false,
       "pageLoadStrategy": "normal",
@@ -117,100 +117,76 @@
       "webauthn:extension:prf": true,
       "webauthn:virtualAuthenticators": true
    },
-   "sessionId": "7ca7ef6a454b060cf60bb5bb76150372"
+   "sessionId": "788e426175b09c7c65145e54368e1401"
 }
-[1702468730.632][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND SetTimeouts {
-   "implicit": 5000
+[1703345410.786][INFO]: [788e426175b09c7c65145e54368e1401] COMMAND Navigate {
+   "url": "https://www.google.com"
 }
-[1702468730.632][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE SetTimeouts
-[1702468730.636][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND Navigate {
-   "url": "https://rahulshettyacademy.com/locatorspractice/"
+[1703345410.786][INFO]: Waiting for pending navigations...
+[1703345410.790][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.013][INFO]: Waiting for pending navigations...
+[1703345411.895][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.895][INFO]: [788e426175b09c7c65145e54368e1401] RESPONSE Navigate
+[1703345411.900][INFO]: [788e426175b09c7c65145e54368e1401] COMMAND CloseWindow {
 }
-[1702468730.636][INFO]: Waiting for pending navigations...
-[1702468730.642][INFO]: Done waiting for pending navigations. Status: ok
-[1702468730.795][INFO]: Waiting for pending navigations...
-[1702468731.386][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.386][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE Navigate
-[1702468731.389][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND FindElement {
-   "using": "css selector",
-   "value": "#inputUsername"
+[1703345412.005][INFO]: [788e426175b09c7c65145e54368e1401] RESPONSE CloseWindow [  ]
+5411.421][INFO]: Waiting for pending navigations...
+[1703345411.422][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.438][INFO]: Waiting for pending navigations...
+[1703345411.442][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.442][INFO]: [dcc689bbc151c23fd7415f8dae316d35] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "169F897B9D508E4751C59F89087CF1FA_element_6"
 }
-[1702468731.389][INFO]: Waiting for pending navigations...
-[1702468731.389][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.400][INFO]: Waiting for pending navigations...
-[1702468731.400][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.400][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "CC81993D7DEE3E75A91427667A4DE0D1_element_2"
+[1703345411.445][INFO]: [dcc689bbc151c23fd7415f8dae316d35] COMMAND TypeElement {
+   "id": "169F897B9D508E4751C59F89087CF1FA_element_6",
+   "text": "anshika@gmail.com",
+   "value": [ "a", "n", "s", "h", "i", "k", "a", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m" ]
 }
-[1702468731.402][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND TypeElement {
-   "id": "CC81993D7DEE3E75A91427667A4DE0D1_element_2",
-   "text": "rahul",
-   "value": [ "r", "a", "h", "u", "l" ]
+[1703345411.445][INFO]: Waiting for pending navigations...
+[1703345411.446][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.547][INFO]: Waiting for pending navigations...
+[1703345411.549][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.549][INFO]: [dcc689bbc151c23fd7415f8dae316d35] RESPONSE TypeElement
+[1703345411.552][INFO]: [dcc689bbc151c23fd7415f8dae316d35] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@id='userPassword']"
 }
-[1702468731.402][INFO]: Waiting for pending navigations...
-[1702468731.403][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.477][INFO]: Waiting for pending navigations...
-[1702468731.479][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.479][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE TypeElement
-[1702468731.483][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND FindElement {
-   "using": "css selector",
-   "value": "*[name='inputPassword']"
+[1703345411.552][INFO]: Waiting for pending navigations...
+[1703345411.553][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.564][INFO]: Waiting for pending navigations...
+[1703345411.565][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.565][INFO]: [dcc689bbc151c23fd7415f8dae316d35] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "169F897B9D508E4751C59F89087CF1FA_element_5"
 }
-[1702468731.483][INFO]: Waiting for pending navigations...
-[1702468731.484][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.498][INFO]: Waiting for pending navigations...
-[1702468731.499][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.500][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "CC81993D7DEE3E75A91427667A4DE0D1_element_6"
+[1703345411.569][INFO]: [dcc689bbc151c23fd7415f8dae316d35] COMMAND TypeElement {
+   "id": "169F897B9D508E4751C59F89087CF1FA_element_5",
+   "text": "Iamking@000",
+   "value": [ "I", "a", "m", "k", "i", "n", "g", "@", "0", "0", "0" ]
 }
-[1702468731.503][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND TypeElement {
-   "id": "CC81993D7DEE3E75A91427667A4DE0D1_element_6",
-   "text": "39847",
-   "value": [ "3", "9", "8", "4", "7" ]
+[1703345411.569][INFO]: Waiting for pending navigations...
+[1703345411.569][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.635][INFO]: Waiting for pending navigations...
+[1703345411.636][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.636][INFO]: [dcc689bbc151c23fd7415f8dae316d35] RESPONSE TypeElement
+[1703345411.639][INFO]: [dcc689bbc151c23fd7415f8dae316d35] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//input[@id='login']"
 }
-[1702468731.503][INFO]: Waiting for pending navigations...
-[1702468731.504][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.633][INFO]: Waiting for pending navigations...
-[1702468731.635][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.635][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE TypeElement
-[1702468731.638][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND FindElement {
-   "using": "css selector",
-   "value": ".signInBtn"
+[1703345411.639][INFO]: Waiting for pending navigations...
+[1703345411.639][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.651][INFO]: Waiting for pending navigations...
+[1703345411.652][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.652][INFO]: [dcc689bbc151c23fd7415f8dae316d35] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "169F897B9D508E4751C59F89087CF1FA_element_11"
 }
-[1702468731.638][INFO]: Waiting for pending navigations...
-[1702468731.639][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.657][INFO]: Waiting for pending navigations...
-[1702468731.658][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.658][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "CC81993D7DEE3E75A91427667A4DE0D1_element_18"
+[1703345411.656][INFO]: [dcc689bbc151c23fd7415f8dae316d35] COMMAND ClickElement {
+   "id": "169F897B9D508E4751C59F89087CF1FA_element_11"
 }
-[1702468731.661][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND ClickElement {
-   "id": "CC81993D7DEE3E75A91427667A4DE0D1_element_18"
+[1703345411.656][INFO]: Waiting for pending navigations...
+[1703345411.657][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.711][INFO]: Waiting for pending navigations...
+[1703345411.712][INFO]: Done waiting for pending navigations. Status: ok
+[1703345411.712][INFO]: [dcc689bbc151c23fd7415f8dae316d35] RESPONSE ClickElement
+[1703345411.715][INFO]: [dcc689bbc151c23fd7415f8dae316d35] COMMAND CloseWindow {
 }
-[1702468731.661][INFO]: Waiting for pending navigations...
-[1702468731.662][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.721][INFO]: Waiting for pending navigations...
-[1702468731.722][INFO]: Done waiting for pending navigations. Status: ok
-[1702468731.723][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE ClickElement
-[1702468731.727][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND FindElement {
-   "using": "css selector",
-   "value": "p.error"
-}
-[1702468731.727][INFO]: Waiting for pending navigations...
-[1702468731.728][INFO]: Done waiting for pending navigations. Status: ok
-[1702468732.798][INFO]: Waiting for pending navigations...
-[1702468732.800][INFO]: Done waiting for pending navigations. Status: ok
-[1702468732.800][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE FindElement {
-   "element-6066-11e4-a52e-4f735466cecf": "CC81993D7DEE3E75A91427667A4DE0D1_element_19"
-}
-[1702468732.808][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND GetElementText {
-   "id": "CC81993D7DEE3E75A91427667A4DE0D1_element_19"
-}
-[1702468732.808][INFO]: Waiting for pending navigations...
-[1702468732.810][INFO]: Done waiting for pending navigations. Status: ok
-[1702468732.856][INFO]: Waiting for pending navigations...
-[1702468732.858][INFO]: Done waiting for pending navigations. Status: ok
-[1702468732.858][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE GetElementText "* Incorrect username or password"
-[1702468732.869][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] COMMAND CloseWindow {
-}
-[1702468732.950][INFO]: [7ca7ef6a454b060cf60bb5bb76150372] RESPONSE CloseWindow [  ]
+[1703345411.798][INFO]: [dcc689bbc151c23fd7415f8dae316d35] RESPONSE CloseWindow [  ]

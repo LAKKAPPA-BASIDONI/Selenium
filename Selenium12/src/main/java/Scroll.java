@@ -19,6 +19,7 @@ public class Scroll {
 		js.executeScript("window.scrollBy(0,500)");
 		Thread.sleep(3000);
 		 js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000");
+		 Thread.sleep(3747);
 		
 		
 		
